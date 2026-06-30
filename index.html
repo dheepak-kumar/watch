@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIME DOESN'T MATTER™</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b0b0b;
+    color:#ffffff;
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('hero.jpg') center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:72px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d0d0d0;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border:1px solid #b76e79;
+    color:#fff;
+    text-decoration:none;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b76e79;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:48px;
+    margin-bottom:50px;
+}
+
+.philosophy{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.philosophy p{
+    font-size:20px;
+    color:#c8c8c8;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+}
+
+.card{
+    background:#151515;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card h3{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.price{
+    color:#b76e79;
+    font-size:28px;
+    margin:20px 0;
+}
+
+.specs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.spec{
+    background:#151515;
+    padding:30px;
+    border-radius:16px;
+}
+
+.spec h4{
+    margin-bottom:10px;
+}
+
+.cta{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+footer{
+    border-top:1px solid #222;
+    text-align:center;
+    padding:40px;
+    color:#888;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:48px;
+    }
+
+    .cta h2{
+        font-size:42px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">TIME DOESN'T MATTER™</div>
+<div>
+<a href="#story">Story</a>
+<a href="#collection">Collection</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>TIME DOESN'T MATTER</h1>
+<p>
+Luxury watches for people who value presence over pressure.
+</p>
+
+<a href="#collection" class="btn">SHOP ROSE GOLD</a>
+<a href="#collection" class="btn">SHOP MATTE BLACK</a>
+</div>
+</section>
+
+<section class="section" id="story">
+<h2 class="section-title">The Philosophy</h2>
+
+<div class="philosophy">
+<p>
+Most watches tell you what time it is.
+<br><br>
+Ours reminds you what matters.
+<br><br>
+At first glance, it appears to be a luxury timepiece.
+Upon closer inspection, the message becomes clear:
+<br><br>
+<strong>"time doesn't matter"</strong>
+<br><br>
+A daily reminder to focus on experiences, relationships,
+purpose, and presence.
+</p>
+</div>
+</section>
+
+<section class="section" id="collection">
+<h2 class="section-title">The Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="rose-gold-watch.jpg" alt="Rose Gold Watch">
+
+<div class="card-content">
+<h3>Rose Gold Edition</h3>
+
+<p>
+Elegant. Refined. Timeless.
+A statement piece crafted for those who appreciate understated luxury.
+</p>
+
+<div class="price">₹24,999</div>
+
+<a href="#" class="btn">BUY NOW</a>
+</div>
+</div>
+
+<div class="card">
+<img src="black-watch.jpg" alt="Black Watch">
+
+<div class="card-content">
+<h3>Matte Black Edition</h3>
+
+<p>
+Modern. Bold. Sophisticated.
+A contemporary luxury watch designed to transcend traditional timekeeping.
+</p>
+
+<div class="price">₹22,999</div>
+
+<a href="#" class="btn">BUY NOW</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Specifications</h2>
+
+<div class="specs">
+
+<div class="spec">
+<h4>Case Size</h4>
+<p>40 mm</p>
+</div>
+
+<div class="spec">
+<h4>Strap Width</h4>
+<p>22 mm</p>
+</div>
+
+<div class="spec">
+<h4>Crystal</h4>
+<p>Sapphire Crystal</p>
+</div>
+
+<div class="spec">
+<h4>Material</h4>
+<p>Premium Stainless Steel</p>
+</div>
+
+<div class="spec">
+<h4>Edition</h4>
+<p>Limited Production</p>
+</div>
+
+<div class="spec">
+<h4>Design</h4>
+<p>Unisex Luxury</p>
+</div>
+
+</div>
+</section>
+
+<section class="cta">
+<h2>Wear The Reminder</h2>
+
+<p style="margin-bottom:30px;color:#ccc;">
+Stop chasing time. Start living.
+</p>
+
+<a href="#" class="btn">ORDER NOW</a>
+</section>
+
+<footer id="contact">
+<p>TIME DOESN'T MATTER™</p>
+<p>Luxury with meaning.</p>
+</footer>
+
+</body>
+</html>
